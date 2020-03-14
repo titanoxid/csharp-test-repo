@@ -6,7 +6,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("test");
+            var greetingGenerator = new GreetingGenerator();
+            var greeting = greetingGenerator.GetGreeting();
+
+            Console.WriteLine($"{greeting } World!");
         }
     }
 }
